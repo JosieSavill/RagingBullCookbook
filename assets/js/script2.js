@@ -31,7 +31,8 @@ function getWeather(lat, lon) {
 
 console.log(currentHour)
 
-     var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
+     //var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
+     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
      var currentWeather 
      fetch(apiUrl)
         .then(function (res) { 
@@ -40,19 +41,10 @@ console.log(currentHour)
 
         .then(function (data) {
 
+           var currentTempEl = document.querySelector(".currentTemp");
+           currentTempEl.textContent="Current Temperature: " + data.main.temp + " ℉"
+            console.log(data.main.temp)
            
-            console.log(data.list)
-            for(let i = 0; i < data.list.length; i++){
-                let checkHour = parseInt( data.list[i].dt_txt.split(" ")[1].split(":")[0] ); //10:00:
-                console.log(checkHour, currentHour, (Math.abs(checkHour - currentHour))  )
-
-                
-                if( (Math.abs(checkHour - currentHour)) < 3){
-                    //console.log("winner", data.list[i])
-                    currentWeather =  data.list[i];
-
-                }
-            }
 
 
            
