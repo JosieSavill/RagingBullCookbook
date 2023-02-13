@@ -1,1 +1,22 @@
-test css 
+* {
+    box-sizing: border-box;
+}
+
+/* class to center search box and search bar  */
+.center {
+    padding-top: 20px;
+    text-align: center;
+   
+}
+/* class that keeps meal results centered and removes li bullet points */
+.recipe-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+}

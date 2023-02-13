@@ -6,51 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <link
-      rel="stylesheet"
-      href="" ** 2nd web API link **
+    <!-- need to add stylesheet web api, NOT bootstrap 
+      try "https://get.foundation/" -->
     
-    /> -->
-  <!-- <link rel="stylesheet" href="./Assets/style.css" /> -->
-  <title>Cookbook</title>
+    <!-- css style sheet goes last -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Beef Cookbook</title>
+
 </head>
 
 <body>
-  <header class="">
-    <h1 style="text-align:center;">Online Recipes for the Meat Fanatic</h1>
-    <P>
-    <h2 style="text-align:center;">Recommended Meals:</h2>
-    </p>
-<!-- search bar and button  -->
+  <header class="" >
+    <h1 style="text-align:center">RAGING BULL COOKBOOK</h1>
+    <h2 style="text-align:center">Online Recipes for the Meat Fanatic</h2>
+    <h3 style="text-align: center">Always Good Weather For A Bar-B-Que!!🌞</h3>
+    <h3 class="currentTemp" style="text-align: center"></h3>
+    
+  </header>
+  
+  <main>
+    
+    <!-- search bar and button  -->
+    <div style="text-align: center;">
     <input id="meal-search" placeholder="Search for a Meal...">
     <button id="search-button">Search</button>
 
-<!-- meal will be displayed here  -->
+    <!-- meals and recipes will be displayed here  -->
+    <div class="recipe-container" id="meal-result"></div>
+  </div>
+   
 
-<div id="meal-result">
   
-</div>
-
-
-  </header>
-  <main>
-    <div class="container ****">
-      <div class="menu">
-        <ul>
-          <li class="beefBrisket"><a href="***">beefBrisket</a></li>
-          <li><a href="beefWellington"><a href="***">beefWellington</a></li>
-          <li><a href="beefStroganoff"><a href="***">beefStroganoff</a></li>
-          <li><a href="mincedBeef"><a href="***">mincedBeef</a></li>
-        </ul>
-      </div>
   </main>
-  <!-- <script src="https://code.jquery.com/*******"></script> 
-    <script
-      src="https://cdn.jsdelivr.net/*******"
-      
-    ></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
 
   <script src="./assets/js/script.js"></script>
+
+  <script src="./assets/js/script2.js"></script>
+
 </body>
 
 </html>
