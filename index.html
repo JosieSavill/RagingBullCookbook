@@ -17,7 +17,7 @@
 
 <body>
   <header class="" >
-    <h1 style="text-align:center">RAGING BULL COOKBOOK</h1>;
+    <h1 style="text-align:center">RAGING BULL COOKBOOK</h1>
     <h2 style="text-align:center">Online Recipes for the Meat Fanatic</h2>
     <h3 style="text-align: center">Always Good Weather For A Bar-B-Que!!🌞</h3>
     <h3 class="currentTemp" style="text-align: center"></h3>
@@ -27,15 +27,16 @@
   <main>
     
     <!-- search bar and button  -->
+    <div style="text-align: center;">
     <input id="meal-search" placeholder="Search for a Meal...">
     <button id="search-button">Search</button>
 
-    <!-- meal will be displayed here  -->
-    <div id="meal-result">
-    </div>
-
+    <!-- meals and recipes will be displayed here  -->
+    <div class="recipe-container" id="meal-result"></div>
+  </div>
    
- 
+
+  
   </main>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
