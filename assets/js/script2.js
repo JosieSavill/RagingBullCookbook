@@ -5,7 +5,7 @@ var apiKey  = "e03b14a13a81827b9aeafad59274a1cc"
 
 function getCoords() {
 
-    var searchCity = "Scottsdale"//document.querySelector("#search-input").value;
+    var searchCity = document.querySelector(".citySearch").value;
     var apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${searchCity}&appid=${apiKey}`
 
     fetch(apiUrl)
@@ -52,4 +52,11 @@ console.log(currentHour)
 
 } 
 
-getCoords();
+
+var cityBtn = document.querySelector(".citySearchBtn") 
+
+cityBtn.addEventListener("click", function(){
+
+    getCoords();
+
+})
