@@ -6,34 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- need to add stylesheet web api, NOT bootstrap 
-      try "https://get.foundation/" -->
-    
-    <!-- css style sheet goes last -->
+    <!-- <added Foundation stylesheet -->
+    <link rel="stylesheet" href="./assets/css/foundation.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Beef Cookbook</title>
 
 </head>
 
 <body>
-  <header class="" >
-    <h1 style="text-align:center">RAGING BULL COOKBOOK</h1>
-    <h2 style="text-align:center">Online Recipes for the Meat Fanatic</h2>
-    <h3 style="text-align: center">Always Good Weather For A Bar-B-Que!!🌞</h3>
-    <h3 class="currentTemp" style="text-align: center"></h3>
-    
-  </header>
-  
   <main>
-    
-    <!-- search bar and button  -->
-    <div style="text-align: center;">
-    <input id="meal-search" placeholder="Search for a Meal...">
-    <button id="search-button">Search</button>
 
-    <!-- meals and recipes will be displayed here  -->
-    <div class="recipe-container" id="meal-result"></div>
-  </div>
+
+    <div>
+
+        <header class="header" style="text-align: center">
+        <h1 style="text-align:center">RAGING BULL COOKBOOK</h1>
+        <h2 style="text-align:center">Online Recipes for the Meat Fanatic</h2>
+        <h3 style="text-align: center">Always Good Weather For A Bar-B-Que!!🌞</h3>
+        <h3 class="currentTemp" style="text-align: center"></h3>
+        <fieldset class="flex-dir-row">
+          <input type="text" class="citySearch" placeholder="City Search">
+          <button class="citySearchBtn button">Search </button>
+        </fieldset>
+    
+      </header>
+      
+
+    
+          <!-- search bar and button  -->
+          <div style="text-align: center;">
+            <fieldset>
+                  <input id="meal-search" type="text" placeholder="Search for a Meal...">
+                  <button id="search-button" class="button">Search</button>
+          </fieldset>
+
+          <!-- meals and recipes will be displayed here  -->
+          <div class="recipe-container" id="meal-result"></div>
+            </div>
+</div>
+
    
 
   
