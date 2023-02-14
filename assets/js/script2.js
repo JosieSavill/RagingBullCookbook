@@ -60,3 +60,14 @@ cityBtn.addEventListener("click", function(){
     getCoords();
 
 })
+
+// var allSaveBtn = document.querySelectorAll(".saveBtn");
+
+// for (let index = 0; index < allSaveBtn.length; index++) {
+//     const element = allSaveBtn[index];
+//     element.addEventListener("click", function(e){
+//             let buttonKey = e.target.parentNode.parentNode.id.split("-")[1];
+//             let myText = document.querySelector("#hour-" + buttonKey + " .description").value // "hour-4PM"
+//             localStorage.setItem(buttonKey, myText);
+//     })
+// }
