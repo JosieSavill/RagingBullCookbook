@@ -30,14 +30,18 @@ function searchMeal() {
                 var recipe = document.createElement("p");
                 var ingredientsHeader = document.createElement("h3");
                 var recipeHeader = document.createElement("h3");
+                var mealImage = document.createElement("img");
 
+                
                 meal.textContent = mealPath.strMeal;
                 recipe.textContent = mealPath.strInstructions;
                 ingredientsHeader.textContent ="Ingredients";
                 recipeHeader.textContent ="Recipe";
+                mealImage.src = mealPath.strMealThumb;
 
                 mealResult.append(meal);
                 mealResult.append(ingredientsHeader);
+                
             
 // loop that goes through all the ingredients and measurements                
                 for (var index = 1; index < 20; index++) {
@@ -50,7 +54,7 @@ function searchMeal() {
                 ingredients.textContent = allMeasurements + " " + allIngredients;
                 
                 
-                mealResult.append(ingredients,recipeHeader,recipe);
+                mealResult.append(ingredients,recipeHeader,recipe, mealImage);
 
 
                 }
