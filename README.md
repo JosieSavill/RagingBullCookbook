@@ -19,3 +19,4 @@ https://get.foundation/sites/docs/typography-base.html
 Link to Google Slides Raging Bull Cookbook Presentation:  
 https://docs.google.com/presentation/d/17zwoxQk7Uc_4YCgEKEp4PgN40OpgqvLQ78TGh-WE684/edit?usp=sharing
 
+![](assets/images/CookbookScreenshot.jpg)
