@@ -15,7 +15,7 @@ https://get.foundation/sites/docs/typography-base.html
 
 Deployed URL: https://josiesavill.github.io/RagingBullCookbook/
 
-Repository URL: 
+Repository URL: https://github.com/JosieSavill/RagingBullCookbook
 
 Link to Google Slides Raging Bull Cookbook Presentation:  
 https://docs.google.com/presentation/d/17zwoxQk7Uc_4YCgEKEp4PgN40OpgqvLQ78TGh-WE684/edit?usp=sharing
